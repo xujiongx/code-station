@@ -38,3 +38,6 @@
 
 ## qrcode.react
 - 生成二维码
+
+
+## lodash
