@@ -4,6 +4,7 @@ import MyEditor from "./pages/Edit";
 import SelectAvatar from "./pages/Game/select_avatar";
 import { Lodash } from "./pages/Lodash";
 import { QRCodeTest } from "./pages/QRCode";
+import Tailwind from "./pages/Tailwind";
 
 export default function App() {
   return (
@@ -46,9 +47,11 @@ function Hello() {
   return (
     <div>
       <div>
-        <Lodash></Lodash>
+        <Lodash />
       </div>
-      Hello word
+      <div>
+        <Tailwind />
+      </div>
     </div>
   );
 }

@@ -18,8 +18,7 @@ module.exports = {
   },
 
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.(ts|tsx)$/,
         exclude: /(node_modules|bower_components)/,
         use: {
@@ -28,12 +27,8 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: [
-          {
+        use: [{
             loader: "style-loader",
-            options: {
-              singleton: true, // 单独的style
-            },
           },
           {
             loader: "css-loader",
@@ -45,8 +40,7 @@ module.exports = {
       },
       {
         test: /\.less$/,
-        use: [
-          {
+        use: [{
             loader: "style-loader",
           },
           {
