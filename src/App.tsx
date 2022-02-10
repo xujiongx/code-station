@@ -2,7 +2,6 @@ import React from "react";
 import { Link, Outlet, Route, Routes } from "react-router-dom";
 import MyEditor from "./pages/Edit";
 import SelectAvatar from "./pages/Game/select_avatar";
-import { Lodash } from "./pages/Lodash";
 import { QRCodeTest } from "./pages/QRCode";
 
 export default function App() {
@@ -43,12 +42,5 @@ function Layout() {
 }
 
 function Hello() {
-  return (
-    <div>
-      <div>
-        <Lodash></Lodash>
-      </div>
-      Hello word
-    </div>
-  );
+  return <div>Hello word</div>;
 }
