@@ -1,5 +1,7 @@
 FROM node:latest as build
+
 COPY . .
+
 RUN yarn && yarn build
 
 FROM nginx:latest
