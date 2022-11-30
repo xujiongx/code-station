@@ -2,6 +2,8 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const webpack = require("webpack");
 
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
+
 module.exports = {
   mode: "development",
   entry: "./src/index.tsx",
@@ -72,6 +74,7 @@ module.exports = {
       filename: "index.html",
       favicon: path.resolve(__dirname, "src", "public", "logo.svg"),
     }),
+    new BundleAnalyzerPlugin()
   ],
   devServer: {
     contentBase: path.resolve(__dirname, "dist"),
