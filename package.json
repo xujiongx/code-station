@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "watch": "webpack --watch",
-    "start": "webpack server",
+    "start:dev": "cross-env NODE_ENV=dev webpack server",
     "build": "webpack --mode=production"
   },
   "dependencies": {
@@ -29,7 +29,8 @@
   "devDependencies": {
     "@swc/core": "^1.2.110",
     "@types/react": "^17.0.16",
-    "@types/react-dom": "^17.0.9"
+    "@types/react-dom": "^17.0.9",
+    "cross-env": "^7.0.3"
   },
   "eslintConfig": {
     "eslint.autoFixOnSave": true
